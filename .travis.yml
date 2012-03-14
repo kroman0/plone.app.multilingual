@@ -1,6 +1,9 @@
 language: python
 python:
   - 2.6
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install libjpeg62-dev libfreetype6-dev zlib1g-dev
 install:
   - python bootstrap.py
   - bin/buildout -N
