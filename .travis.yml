@@ -3,7 +3,7 @@ python:
   - 2.6
 before_install:
   - sudo apt-get update
-  - sudo apt-get install python-profiler
+  - sudo apt-get install python2.6-profiler
   - pip install http://effbot.org/downloads/Imaging-1.1.6.tar.gz
 install:
   - python bootstrap.py
